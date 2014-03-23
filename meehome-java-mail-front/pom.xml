@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>fr.meehome.mail</groupId>
+		<artifactId>meehome-java-mail</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+  
+	<groupId>fr.meehome.mail</groupId>
+	<artifactId>meehome-java-mail-webapp</artifactId>
+	<version>1.2-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>meehome-java-mail-webapp</name>
+	
+	<build>
+		<finalName>meehome-java-mail-webapp</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.mortbay.jetty</groupId>
+				<artifactId>maven-jetty-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>
