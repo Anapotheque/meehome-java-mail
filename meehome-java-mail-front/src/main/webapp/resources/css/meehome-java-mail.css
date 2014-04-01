@@ -1,59 +1,42 @@
-/* line 1, ../sass/style/_structure.scss */
 .error {
   padding: 10px;
   margin-bottom: 10px;
 }
 
-/* line 6, ../sass/style/_structure.scss */
 .clear {
   clear: both;
 }
 
-
-/* line 10, ../sass/style/_structure.scss */
 .wrapper {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  width: 80%;
-  background-color: #FFFFFF;
+  width: 50%;
   overflow: auto;
-  opacity: 0.8;
 }
 
-/* line 20, ../sass/style/_structure.scss */
 section {
   opacity: 1;
 }
 
-/* line 26, ../sass/style/_structure.scss */
 aside {
   width: 200px;
   float: left;
 }
 
-/* line 31, ../sass/style/_structure.scss */
-footer {
-  font-size: 10px;
-}
-
-/* line 1, ../sass/style/_overrideBootstrap.scss */
 body {
   background-color: #555555;
   background-attachment: fixed;
-  background-image: url("/meehome-java-mail-webapp/resources/img/font4.jpg");
+  background-image: url("/meehome-java-mail-webapp/resources/img/background-body.png");
   background-repeat: no-repeat;
   color: #555555;
-/*   font-family: Verdana,Geneva,sans-serif; */
 }
 
-/* line 6, ../sass/style/_overrideBootstrap.scss */
 hr {
   margin: 10px 0;
 }
 
-/* line 7, ../sass/style/_overrideBootstrap.scss */
 form {
   margin: 0;
 }
