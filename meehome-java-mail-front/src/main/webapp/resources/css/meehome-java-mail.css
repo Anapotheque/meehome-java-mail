@@ -9,22 +9,22 @@
   clear: both;
 }
 
+
 /* line 10, ../sass/style/_structure.scss */
 .wrapper {
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  width: 995px;
+  width: 80%;
   background-color: #FFFFFF;
   overflow: auto;
+  opacity: 0.8;
 }
 
 /* line 20, ../sass/style/_structure.scss */
 section {
-  width: 765px;
-  float: left;
-  margin-left: 10px;
+  opacity: 1;
 }
 
 /* line 26, ../sass/style/_structure.scss */
@@ -41,6 +41,9 @@ footer {
 /* line 1, ../sass/style/_overrideBootstrap.scss */
 body {
   background-color: #555555;
+  background-attachment: fixed;
+  background-image: url("/meehome-java-mail-webapp/resources/img/font4.jpg");
+  background-repeat: no-repeat;
   color: #555555;
 /*   font-family: Verdana,Geneva,sans-serif; */
 }
