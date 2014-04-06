@@ -16,10 +16,6 @@
   overflow: auto;
 }
 
-section {
-  opacity: 1;
-}
-
 aside {
   width: 200px;
   float: left;
@@ -39,4 +35,14 @@ hr {
 
 form {
   margin: 0;
+}
+
+#loading {
+	position 		: relative;
+	top				: 200px;
+	width			: 300px;
+	margin			: auto;
+}
+.progress{
+	margin-bottom 	: 0;
 }

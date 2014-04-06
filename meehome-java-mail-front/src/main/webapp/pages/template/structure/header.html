@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="/meehome-java-mail-webapp/"><span class="glyphicon glyphicon-home"></span></a>
+	</div>
+	<ul class="nav navbar-nav">
+		<li><a href="/meehome-java-mail-webapp/pages/template/mail/mail.html"><span class="glyphicon glyphicon-envelope"></span></a></li>
+        <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span><b class="caret"></b></a>
+			<ul class="dropdown-menu">
+	            <li><a href="/meehome-java-mail-webapp/pages/template/mailinglist.html">Gerer la mailing liste</a></li>
+	            <li><a href="/meehome-java-mail-webapp/pages/template/parametreMail.html">Paramêtre de la boite mail</a></li>
+	            <li class="divider"></li>
+	            <li><a href="/meehome-java-mail-webapp/pages/template/mail/historique.html">Historique des envois</a></li>
+			</ul>
+		</li>
+	</ul>
+	<form method="POST" action="" class="navbar-form form-inline">
+		<div style="text-align:right">
+			<div class="form-group">
+				<input type="text" placeholder="email" class="form-control" />
+			</div><div class="form-group" style="margin-left : 5px;">
+				<input type="password" placeholder="password" class="form-control" />
+			</div>
+			<button class="btn btn-default" type="submit">Connexion</button>
+			<button class="btn btn-default" type="submit">Deconnexion</button>
+		</div>
+	</form>
+</nav>
