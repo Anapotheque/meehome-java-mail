@@ -4,7 +4,7 @@
 	<display-name>meehome-java-mail-webapp</display-name>
 
 	<welcome-file-list>
-		<welcome-file>/pages/template/accueil.html</welcome-file>
+		<welcome-file>/pages/template/index.html</welcome-file>
 	</welcome-file-list>
 
 	<error-page>
