@@ -1,36 +1,52 @@
-<form method="POST" role="form">
+<ol class="breadcrumb">
+	<li><a href="#" onclick="content('accueil')">Accueil</a></li>
+	<li class="active">Gestion de la mailing liste</a></li>
+</ol>
 
-	<!-- EMAIL D'ENVOI -->
-	<div class="form-group">
-		<label for="email">Votre mail sera envoyé depuis l'adresse mail</label>
-		<input class="form-control" id="disabledInput" type="text" placeholder="raballand.romain@gmail.com" disabled />
-		<p class="help-block"><a href="#">Changer / Ajouter une boite mail</a></p>
-	</div>
+<div class="panel panel-default">
 	
-	<!-- DESTINATAIRES -->
-	<div class="form-group">
-		<label for="detinataires">Destinataires</label>
-		<input  id="detinataires" type="file">
-					<p class="help-block">fichier des destinataires à joindre</p>
+	<div class="panel-heading">
+		<h3 class="panel-title">Gestion de la mailing liste</h3>
 	</div>
-	
-	<!-- OBJET MAIL -->
-	<div class="form-group">
-		<label for="objet">Objet du mail</label>
-		<input id="objet" type="text" placeholder="objet du mail" class="form-control" />
+		
+	<div class="panel-body">
+
+		<form method="POST" role="form">
+		
+			<!-- EMAIL D'ENVOI -->
+			<div class="form-group">
+				<label for="email">Votre mail sera envoyÃ© depuis l'adresse mail</label>
+				<input class="form-control" id="disabledInput" type="text" placeholder="raballand.romain@gmail.com" disabled />
+				<p class="help-block"><a href="#">Changer / Ajouter une boite mail</a></p>
+			</div>
+			
+			<!-- DESTINATAIRES -->
+			<div class="form-group">
+				<label for="detinataires">Destinataires</label>
+				<input  id="detinataires" type="file">
+				<p class="help-block">fichier des destinataires Ã  joindre</p>
+			</div>
+			
+			<!-- OBJET MAIL -->
+			<div class="form-group">
+				<label for="objet">Objet du mail</label>
+				<input id="objet" type="text" placeholder="objet du mail" class="form-control" />
+			</div>
+			
+			<!-- PIECE JOINTE MAIL -->
+			<div class="form-group">
+				<label for="file"><span class="glyphicon glyphicon-paperclip"></span> </label>
+				<input id="file" type="file"></input>
+			</div>
+			
+			<!-- CONTENU MAIL -->
+			<div class="form-group">
+				<label for="content">Contenu du mail</label>
+				<textarea id="elm1" name="area"></textarea>
+			</div>
+			
+			<button type="submit" class="btn btn-default">Envoyer le mail</button>
+		</form>
+		
 	</div>
-	
-	<!-- PIECE JOINTE MAIL -->
-	<div class="form-group">
-		<label for="file"><span class="glyphicon glyphicon-paperclip"></span> </label>
-		<input id="file" type="file"></input>
-	</div>
-	
-	<!-- CONTENU MAIL -->
-	<div class="form-group">
-		<label for="content">Contenu du mail</label>
-		<textarea id="elm1" name="area"></textarea>
-	</div>
-	
-	<button type="submit" class="btn btn-default">Envoyer le mail</button>
-</form>
+</div>
