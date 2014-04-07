@@ -7,15 +7,6 @@
   clear: both;
 }
 
-.wrapper {
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  width: 50%;
-  overflow: auto;
-}
-
 aside {
   width: 200px;
   float: left;
@@ -24,9 +15,13 @@ aside {
 body {
   background-color: #555555;
   background-attachment: fixed;
-  background-image: url("/meehome-java-mail-webapp/resources/img/background-body.png");
+/*   background-image: url("/meehome-java-mail-webapp/resources/img/background-body.png"); */
   background-repeat: no-repeat;
   color: #555555;
+}
+
+header {
+	margin-top : 20px;
 }
 
 hr {
@@ -37,12 +32,13 @@ form {
   margin: 0;
 }
 
-#loading {
+.loading {
 	position 		: relative;
-	top				: 200px;
+	top				: 15px;
 	width			: 300px;
 	margin			: auto;
 }
+
 .progress{
 	margin-bottom 	: 0;
 }

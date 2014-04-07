@@ -1,40 +1,28 @@
 <ol class="breadcrumb">
-	<li><a href="#" onclick="content('accueil')">Accueil</a></li>
+	<li><a href="accueil">Accueil</a></li>
 	<li class="active">Paramêtrage</a></li>
 </ol>
 
+<form method="POST" role="form">
 
-<div class="panel panel-default">
+	<!-- EMAIL -->
+	<div class="form-group">
+		<label for="email">Votre adresse mail</label>
+		<input class="form-control" type="text" placeholder="adresse mail" />
+	</div>
 	
-	<div class="panel-heading">
-		<h3 class="panel-title">Paramêtrage du mail</h3>
+	<!-- identifiant -->
+	<div class="form-group">
+		<label for="identifiant">Votre identifiant</label>
+		<input id="identifiant" type="text" placeholder="Votre identifiant" class="form-control" />
 	</div>
-		
-	<div class="panel-body">
-
-		<form method="POST" role="form">
-		
-			<!-- EMAIL -->
-			<div class="form-group">
-				<label for="email">Votre adresse mail</label>
-				<input class="form-control" type="text" placeholder="adresse mail" />
-			</div>
-			
-			<!-- identifiant -->
-			<div class="form-group">
-				<label for="identifiant">Votre identifiant</label>
-				<input id="identifiant" type="text" placeholder="Votre identifiant" class="form-control" />
-			</div>
-			
-			<!-- mot de passe -->
-			<div class="form-group">
-				<label for="password">Votre mot de passe</label>
-				<input id="password" type="password" placeholder="Votre mot de passe" class="form-control" />
-			</div>
-			
-			<button type="submit" class="btn btn-default">Enregistrer</button>
-			
-		</form>
-		
+	
+	<!-- mot de passe -->
+	<div class="form-group">
+		<label for="password">Votre mot de passe</label>
+		<input id="password" type="password" placeholder="Votre mot de passe" class="form-control" />
 	</div>
-</div>
+	
+	<button type="submit" class="btn btn-default">Enregistrer</button>
+	
+</form>

@@ -3,6 +3,7 @@
     <head>
     	
 		<title>Webapp - Gestion mail</title>
+		
 		<meta charset="utf-8" />
 		
 		<!-- CSS -->
@@ -12,25 +13,101 @@
         
     </head>
     <body>
-    	
-		<div id="loading">
-	    	<div class="panel panel-default">
-				<div class="panel-body">
-				    <div class="progress progress-striped active">
-						<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+    		
+		<div class="container">
+		
+			<div class="loading" style="display:none;">
+		    	<div class="panel panel-default">
+					<div class="panel-body">
+					    <div class="progress progress-striped active">
+							<div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+						</div>
 					</div>
 				</div>
+	    	</div>
+		
+			<header id="header">
+   		
+    			<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<a class="navbar-brand" href="accueil"><span class="glyphicon glyphicon-home"></span></a>
+					</div>
+					<ul class="nav navbar-nav">
+				        <li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+					            <li><a href="mail/historique">Envoyer un mail</a></li>
+					            <li><a href="mail/mail">Historique des envois</a></li>
+					            <li class="divider"></li>
+					            <li><a href="mailing/liste">Gerer la mailing liste</a></li>
+					            <li><a href="mailing/import">Importer une liste de destinataire</a></li>
+					            <li class="divider"></li>
+					            <li><a href="parametrage">Paramêtre de la boite mail</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<form method="POST" action="" class="navbar-form form-inline">
+						<div style="text-align:right">
+							<div class="form-group">
+								<input type="text" placeholder="email" class="form-control" />
+							</div><div class="form-group" style="margin-left : 5px;">
+								<input type="password" placeholder="password" class="form-control" />
+							</div>
+							<button class="btn btn-default" type="submit">Connexion</button>
+						</div>
+					</form>
+				</nav>
+    		
+    		</header>
+		
+		   	<div class="panel panel-default">
+				<div class="panel-body">
+					
+					<!-- **************************************************************************** -->
+					<!-- INJECTION CONTENU	                                                  -->
+					<!-- **************************************************************************** -->
+					<section id="content"></section>
+					<!-- **************************************************************************** -->
+					<!-- FIN INJECTION CONTENU		                                                  -->
+					<!-- **************************************************************************** -->
+					
+					<footer id="footer">
+						<hr/>
+						<div style="text-align:right;font-size:80%;">
+							<a href="#" data-toggle="modal" data-target="#myModal">Besoin d'aide ?</a>
+						</div>
+						
+						<!-- POPUP : Informations complementaire -->
+						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title" id="myModalLabel">Besoin d'aide ?</h4>
+									</div>
+									<div class="modal-body">
+										<p>Conception et fonctionnalité : RABALLAND Romain, raballand.romain@gmail.com.</p>
+										<p>Architecture et hébergement : DESIRE Cédric, cedric.desire@gmail.com.</p>
+										<p>Version : 1.0</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
 			</div>
-    	</div>
-    	<div id="container" style="display:none;"></div>
-        
+		</div>
+    	
         <!-- JAVASCRIPT -->
         <script src="/meehome-java-mail-webapp/resources/js/jquery-1.11.0.min.js"></script>
         <script src="/meehome-java-mail-webapp/resources/js/angular.min.js"></script>
         <script src="/meehome-java-mail-webapp/resources/js/tinymce/tinymce.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         <script src="/meehome-java-mail-webapp/resources/js/meehome-java-mail.js"></script>
-        <script>$(document).ready(function(){load("pages/content/accueil.html","#content");});</script>
         
     </body>
 </html>
