@@ -39,22 +39,60 @@
 								<p class="help-block"><a href="/meehome-java-mail-webapp/pages/template/parametrage.html">Configurer ma boite mail</a></p>
 							</div>
 						</div>
-						
-						<!-- DESTINATAIRES -->
-						<div style="float:left;margin-left:20px;">
+						<div style="width:30%;float:left;padding-left:20px;">
+							<!-- DESTINATAIRES -->
 							<div class="form-group">
 								<label for="detinataires">Destinataires</label>
-								<select multiple class="form-control">
-									<option>romain raballand - raballand.romain@gmail.com</option>
-									<option>romain raballand - raballand.romain@gmail.com</option>
-									<option>romain raballand - raballand.romain@gmail.com</option>
-									<option>romain raballand - raballand.romain@gmail.com</option>
-									<option>romain raballand - raballand.romain@gmail.com</option>
-									<option>romain raballand - raballand.romain@gmail.com</option>
-								</select>
 								<p class="help-block"><a href="/meehome-java-mail-webapp/pages/template/mailing/liste.html">Modifier / importer des destinataires</a></p>
+								<a href="#" data-toggle="modal" data-target="#myModal">Voir la liste des destinataires</a>
+								<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+												<h4 class="modal-title" id="myModalLabel">Liste des destinataires</h4>
+											</div>
+											<div class="modal-body">
+												<table class="table table-hover">
+													<thead>
+														<tr>
+															<th>#</th>
+															<th>Prénom</th>
+															<th>Nom</th>
+															<th>Email</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>1</td>
+															<td>Romain</td>
+															<td>RABALLAND</td>
+													        <td>raballand.romain@gmail.com</td>
+														</tr>
+														<tr>
+															<td>2</td>
+															<td>Romain</td>
+															<td>RABALLAND</td>
+													        <td>raballand.romain@gmail.com</td>
+														</tr>
+														<tr>
+															<td>3</td>
+															<td>Romain</td>
+															<td>RABALLAND</td>
+													        <td>raballand.romain@gmail.com</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
+						
 						
 						<div style="clear:both;" />
 						
