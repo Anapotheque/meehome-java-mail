@@ -9,7 +9,7 @@ import org.junit.Test;
 import com.dumbster.smtp.SimpleSmtpServer;
 import com.dumbster.smtp.SmtpMessage;
 
-import fr.meehome.mail.services.Mail;
+import fr.meehome.mail.services.domain.Mail;
 
 public class MailServiceTest {
 

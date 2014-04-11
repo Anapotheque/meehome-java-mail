@@ -14,8 +14,8 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 import fr.meehome.mail.services.IMailService;
-import fr.meehome.mail.services.Mail;
 import fr.meehome.mail.services.Util;
+import fr.meehome.mail.services.domain.Mail;
 
 public class MailService implements IMailService {
 
