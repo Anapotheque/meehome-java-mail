@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>fr.meehome.mail</groupId>
 		<artifactId>meehome-java-mail</artifactId>
-		<version>1.0-SNAPSHOT</version>
+		<version>1.2-SNAPSHOT</version>
 	</parent>
   
 	<groupId>fr.meehome.mail</groupId>
@@ -32,6 +32,12 @@
 			<groupId>fr.meehome.mail</groupId>
 			<artifactId>meehome-java-mail-services</artifactId>
 			<version>${project.version}</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>commons-collections</artifactId>
+					<groupId>commons-collections</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	
 		<!-- GESTION DES TAGS JSP -->
