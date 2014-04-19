@@ -1,0 +1,22 @@
+<ol class="breadcrumb">
+	<li><a href="/meehome-java-mail-webapp/">Accueil</a></li>
+	<li class="active">Gestion de la mailing liste</li>
+</ol>
+
+<ul class="nav nav-tabs">
+	<li><a href="#" onclick="content('diffusion/liste')">Listes des inscrits à la mailing liste</a></li>
+	<li class="active"><a href="#">Importer un fichier</a></li>
+</ul>
+<br/>
+<p>Attention, tout import ecrasera les données deja presentes.</p>
+
+<form method="POST" role="form">
+	
+	<!-- DESTINATAIRES -->
+	<div class="form-group">
+		<input  id="detinataires" type="file">
+		<p class="help-block">fichier des destinataires à joindre</p>
+	</div>
+	
+	<button type="submit" class="btn btn-default">Importer destinataires</button>
+</form>
