@@ -13,9 +13,10 @@ app.run(function ($rootScope, $templateCache) {
     });
 });
 
-app.controller('CommunesControlleur', ['$scope', 'CommuneFactory', function ($scope, CommuneFactory) {
-	CommuneFactory.get({}, function (communeFactory) {
-        $scope.libelle = communeFactory.libelle;
-        $scope.codePostal = communeFactory.codePostal;
+app.controller('ListeDiffusionControlleur', ['$scope', 'ListeDiffusionFactory', function ($scope, ListeDiffusionFactory) {
+	ListeDiffusionFactory.get({}, function (ListeDiffusionFactory) {
+        $scope.nom = ListeDiffusionFactory.nom;
+        $scope.prenom = ListeDiffusionFactory.prenom;
+        $scope.mail = ListeDiffusionFactory.mail;
     })
 }]);

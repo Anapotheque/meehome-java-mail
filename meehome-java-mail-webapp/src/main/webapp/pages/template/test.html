@@ -1,17 +1,66 @@
-<p id="file_containor">
-<input class="file-upload" type="file" name="Filedata" />
-</p>
-								<style>
-								#file_containor {
-	border: 5px solid #ddd;
-	background-color: #ddd;
-	height: 200px; width: 200px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	overflow: hidden; position: relative;
-}
-#file_containor input {
-	position: absolute; top: 0; right: 0;
-	font-size: 250px;
-	opacity: 0;
-}</style>
+<!DOCTYPE HTML>
+<html lang="fr" ng-app="meehome">
+    <head>
+    	
+		<title>Webapp - Gestion mail</title>
+		
+		<meta charset=iso-8859-15" />
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="/meehome-java-mail-webapp/resources/css/meehome-java-mail.css" />
+        
+    </head>
+    <body ng-controller="ListDiffusionCtrl">
+    	
+		<div class="container">
+		
+			<header id="header"></header>
+		
+		   	<div class="panel panel-default">
+				<div class="panel-body">
+					
+					<section id="content"></section>
+					<footer id="footer"></footer>
+					
+					 <select ng-model="orderProp">
+					    <option value="name">Alphabetical</option>
+					    <option value="age">Newest</option>
+					  </select>
+					
+					 Search: <input ng-model="query">
+					
+					<ul>
+						<li ng-repeat="personne in personnes | filter:query | orderBy:orderProp ">
+							{{personne.name}}
+							<p>{{personne.snippet}}</p>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+    	
+        <!-- JAVASCRIPT -->
+        <script src="/meehome-java-mail-webapp/resources/js/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="/meehome-java-mail-webapp/resources/js/meehome-java-mail.js"></script>
+        
+        <script src="/meehome-java-mail-webapp/resources/angularJS/angular.js"></script>
+		
+		
+		<script src="/meehome-java-mail-webapp/resources/angularJS/angular-resource.js"></script>
+		
+		<script src="/meehome-java-mail-webapp/resources/js/webapp/test.js"></script>
+		
+<!-- 		<script src="/meehome-java-mail-webapp/resources/js/webapp/app.js"></script> -->
+<!-- 	   	<script src="/meehome-java-mail-webapp/resources/js/webapp/services.js"></script> -->
+<!-- 	   	<script src="/meehome-java-mail-webapp/resources/js/webapp/controllers.js"></script> -->
+<!-- 	   	<script src="/meehome-java-mail-webapp/resources/js/webapp/filters.js"></script> -->
+<!-- 	   	<script src="/meehome-java-mail-webapp/resources/js/webapp/directives.js"></script> -->
+        
+        <script>$(document).ready(function(){content('accueil');});</script>
+        
+    </body>
+</html>
