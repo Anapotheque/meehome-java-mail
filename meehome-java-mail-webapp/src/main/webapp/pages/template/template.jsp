@@ -2,23 +2,35 @@
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<html>
+<html lang="fr">
     <head>
         <tiles:insertAttribute name="meta" />
     </head>
     <body>
-    	<div class="wrapper">
-    	    <header>
-	            <tiles:insertAttribute name="header" />
-	        </header>
-	        <div class="element">
+    	<div class="page">
+	    	<div class="container">
+	    	
+	    		<!-- HEADER DU SITE -->
+	    	    <header><tiles:insertAttribute name="header" /></header>
+	    	    
+	    	    <!-- BREADCRUMBS DU SITE -->
+	    	    <nav><tiles:insertAttribute name="breadcrumbs" /></nav>
+	            
+	            <!-- CONTENU DU SITE -->
 	            <section>
-	            	<tiles:insertAttribute name="section" />
+	            	
+	            	<div class="panel panel-default">
+						<div class="panel-heading"><tiles:getAsString name="content-header" /></div>
+						<div class="panel-body">
+				    		<tiles:insertAttribute name="content" />
+				    	</div>
+					</div>
+					
 	            </section>
-	        </div>
-	        <footer>
-	            <tiles:insertAttribute name="footer" />
-	        </footer>
+			</div>
+	    
+	    	<!-- FOOTER DU SITE -->
+	    	<footer><tiles:insertAttribute name="footer" /></footer>
         </div>
         
         <!-- JAVASCRIPT -->
