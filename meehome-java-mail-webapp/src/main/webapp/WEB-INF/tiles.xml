@@ -6,13 +6,16 @@
     <definition name="template" template="/pages/template/template.jsp">
         <put-attribute name="meta" value="/pages/template/meta.jsp" />
         <put-attribute name="header" value="/pages/template/header.jsp" />
-        <put-attribute name="section" value="/pages/template/section.jsp" />
+        <put-attribute name="breadcrumbs" value="/pages/template/breadcrumbs.jsp" />
+        <put-attribute name="content-header" value="not implemented" />
+        <put-attribute name="content" value="/pages/template/content.jsp" />
         <put-attribute name="footer" value="/pages/template/footer.jsp" />
     </definition>
 	
 	<!-- ACCUEIL -->
     <definition name="accueil" extends="template">
-        <put-attribute name="section" value="/pages/content/accueil.jsp" />
+    	<put-attribute name="content-header" value="Accueil" />
+        <put-attribute name="content" value="/pages/content/accueil/accueil.jsp" />
     </definition>
     
 </tiles-definitions>
