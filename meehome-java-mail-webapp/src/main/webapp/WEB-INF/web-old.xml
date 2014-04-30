@@ -5,7 +5,7 @@
 	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
 	<display-name>meehome-java-mail-webapp</display-name>
-	
+
 	<welcome-file-list>
 		<welcome-file>/pages/template/accueil.html</welcome-file>
 	</welcome-file-list>
@@ -14,22 +14,7 @@
 		<error-code>404</error-code>
 		<location>/pages/template/404.html</location>
 	</error-page>
-	
-	<!-- GESTION DES TEMPLATES AVEC APACHE - TILES -->
-	<listener>
-	    <listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
-	</listener>
-	<servlet>
-	    <servlet-name>Tiles Dispatch Servlet</servlet-name>
-	    <servlet-class>org.apache.tiles.web.util.TilesDispatchServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-	    <servlet-name>Tiles Dispatch Servlet</servlet-name>
-	    <url-pattern>/</url-pattern>
-	</servlet-mapping>
-	
-	
-	
+
 	<servlet>
 	    <servlet-name>jersey-serlvet</servlet-name>
 	    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
