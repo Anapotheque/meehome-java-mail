@@ -7,11 +7,11 @@ angular.module('meehome-java-mail-webapp', [
 	.config(function ($routeProvider, $httpProvider) {
 	    
 		// Accueil
-		$routeProvider.when('/accueil', {templateUrl: '/meehome-java-mail-webapp/pages/content/accueil/accueil.jsp', controller: 'destinataireListeCtrl'});
+		$routeProvider.when('/accueil', {templateUrl: '/meehome-java-mail-webapp/pages/content/accueil/accueil.jsp'});
 		
 		// Gestion des destinataires
 		$routeProvider.when('/destinataire-liste', {templateUrl: '/meehome-java-mail-webapp/pages/content/destinataire/liste.jsp', controller: 'destinataireListeCtrl'});
-	    $routeProvider.when('/destinataire-detail:id', {templateUrl: '/meehome-java-mail-webapp/pages/content/destinataire/detail.jsp', controller: 'destinataireDetailCtrl'});
+	    $routeProvider.when('/destinataire-update/:id', {templateUrl: '/meehome-java-mail-webapp/pages/content/destinataire/create.jsp', controller: 'destinataireUpdateCtrl'});
 	    $routeProvider.when('/destinataire-create', {templateUrl: '/meehome-java-mail-webapp/pages/content/destinataire/create.jsp', controller: 'destinataireCreateCtrl'});
 	    
 	    // Redirection accueil
