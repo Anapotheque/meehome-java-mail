@@ -17,19 +17,22 @@ public class DestinataireService implements IDestinataireService {
         list = new ArrayList<Destinataire>();
 
         Destinataire romain = new Destinataire();
+        romain.setId(0);
         romain.setNom("RABALLAND");
-        romain.setNom("v");
-        romain.setNom("raballand.romain@gmail.com");
+        romain.setPrenom("Romain");
+        romain.setMail("raballand.romain@gmail.com");
 
         Destinataire dolores = new Destinataire();
+        dolores.setId(1);
         dolores.setNom("RABALLAND");
-        dolores.setNom("Dolores");
-        dolores.setNom("raballand.dolores@gmail.com");
+        dolores.setPrenom("Dolores");
+        dolores.setMail("raballand.dolores@gmail.com");
 
         Destinataire olivier = new Destinataire();
+        olivier.setId(2);
         olivier.setNom("RABALLAND");
-        olivier.setNom("Olivier");
-        olivier.setNom("raballand.olivier@gmail.com");
+        olivier.setPrenom("Olivier");
+        olivier.setMail("raballand.olivier@gmail.com");
 
         list.add(romain);
         list.add(olivier);
@@ -52,13 +55,14 @@ public class DestinataireService implements IDestinataireService {
 
     @Override
     public Destinataire create(Destinataire destinataire) {
-        System.out.println("CREATION DESTINATAIRE");
+        list.add(destinataire);
+        System.out.println("MISE A JOUR DESTINATAIRE : " + destinataire.getNom() + " - " + destinataire.getPrenom());
         return null;
     }
 
     @Override
     public Destinataire update(Destinataire destinataire) {
-        System.out.println("MISE A JOUR DESTINATAIRE");
+        System.out.println("MISE A JOUR DESTINATAIRE" + destinataire.getNom() + " - " + destinataire.getPrenom());
         return null;
     }
 
