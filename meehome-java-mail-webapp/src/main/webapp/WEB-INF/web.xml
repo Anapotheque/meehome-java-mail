@@ -7,7 +7,7 @@
 	<display-name>meehome-java-mail-webapp</display-name>
 	
 	<welcome-file-list>
-		<welcome-file>/accueil.tiles</welcome-file>
+		<welcome-file>accueil</welcome-file>
 	</welcome-file-list>
 	
 	<error-page>
@@ -16,15 +16,15 @@
 	</error-page>
 	
 	<!-- Configuration Spring -->
-	<listener>
-	   <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>
-			classpath:/fr/meehome/mail/front/applicationContext.xml
-		</param-value>
-	</context-param>
+<!-- 	<listener> -->
+<!-- 	   <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class> -->
+<!-- 	</listener> -->
+<!-- 	<context-param> -->
+<!-- 		<param-name>contextConfigLocation</param-name> -->
+<!-- 		<param-value> -->
+<!-- 			classpath:/fr/meehome/mail/front/applicationContext.xml -->
+<!-- 		</param-value> -->
+<!-- 	</context-param> -->
 	
 	<!-- GESTION DES TEMPLATES AVEC APACHE - TILES -->
 	<listener>
@@ -39,6 +39,7 @@
 	    <url-pattern>*.tiles</url-pattern>
 	</servlet-mapping>
 	
+	<!-- DECLARATION DES SERVICES REST -->
 	<servlet>
 	    <servlet-name>jersey-serlvet</servlet-name>
 	    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>

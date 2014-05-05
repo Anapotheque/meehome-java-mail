@@ -12,6 +12,13 @@
     </definition>
 	
 	<!-- ACCUEIL -->
+    <definition name="" extends="template">
+    	<put-attribute name="content-header" value="Accueil" />
+<!--         <put-attribute name="content" value="/pages/content/accueil/accueil.jsp" /> -->
+        <put-attribute name="breadcrumbs" value="/pages/content/accueil/breadcrumbs.jsp" />
+    </definition>
+	
+	<!-- ACCUEIL -->
     <definition name="accueil" extends="template">
     	<put-attribute name="content-header" value="Accueil" />
 <!--         <put-attribute name="content" value="/pages/content/accueil/accueil.jsp" /> -->
