@@ -1,6 +1,7 @@
-
-<div style="text-align:right;font-size:80%;">
-	<a href="#" data-toggle="modal" data-target="#myModal">Besoin d'aide ?</a>
+<div class="container">    
+	<div style="text-align:right;font-size:80%;">
+		<a href="#" data-toggle="modal" data-target="#myModal">Besoin d'aide ?</a>
+	</div>
 </div>
 
 <!-- POPUP : Informations complementaire -->

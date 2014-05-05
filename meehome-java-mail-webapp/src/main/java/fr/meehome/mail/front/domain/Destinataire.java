@@ -3,9 +3,9 @@ package fr.meehome.mail.front.domain;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class Personne {
+public class Destinataire {
 
-    private String id;
+    private int id;
 
     private String nom;
 
@@ -13,18 +13,11 @@ public class Personne {
 
     private String mail;
 
-    public Personne(String id, String nom, String prenom, String mail) {
-        this.id = id;
-        this.nom = nom;
-        this.prenom = prenom;
-        this.mail = mail;
-    }
-
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

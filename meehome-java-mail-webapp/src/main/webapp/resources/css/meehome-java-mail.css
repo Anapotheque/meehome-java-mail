@@ -7,21 +7,21 @@
   clear: both;
 }
 
+a {
+	color : #55555A;
+}
+
 aside {
   width: 200px;
   float: left;
 }
 
 body {
-  background-color: #d6d6d6;
-/*   background-attachment: fixed; */
-/*   background-image: url("/meehome-java-mail-webapp/resources/img/background-body.png"); */
+  background-attachment: fixed;
+  background-image: url("/meehome-java-mail-webapp/resources/img/background-body-1.png");
+/*   background-image: url("/meehome-java-mail-webapp/resources/img/background-body-2.jpg"); */
   background-repeat: no-repeat;
   color: #555555;
-}
-
-header {
-	margin-top : 20px;
 }
 
 hr {
@@ -58,15 +58,51 @@ html, body {
 	position: relative;
 }
 
-.container {
-	padding-bottom: 100px;
-}
-
 footer {
  	height: 100px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
- 	background-color: #444444;
+}
+
+a.navbar-brand, .nav > li > a {
+	text-shadow:none;
+	color: white;
+}
+
+footer a {
+	text-shadow:none;
+	color: white;
+}
+footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.nav > li > a:hover, a.navbar-brand:focus, .nav > li > a:focus, .nav .open > a:focus {
+	color: white;
+	background-color: transparent;
+}
+
+.breadcrumb {
+    background-color: transparent;
+    border-radius: 4px;
+    list-style: none outside none;
+}
+.breadcrumb > .active {
+	color : white;
+}
+
+article {
+	background-color: white;
+	border : 1px solid #DEDEDE;
+	border-radius : 4px;
+	padding : 10px;
+	margin : 0 0 10px 0;
+}
+
+.panel-default > .panel-heading {
+	background-image : none;
+	background-color : #f8f8f8; /* url('/meehome-java-mail-webapp/resources/img/noise.png') top left;*/
 }

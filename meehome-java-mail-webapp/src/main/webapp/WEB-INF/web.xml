@@ -7,17 +7,28 @@
 	<display-name>meehome-java-mail-webapp</display-name>
 	
 	<welcome-file-list>
-		<welcome-file>/pages/template/accueil.html</welcome-file>
+		<welcome-file>/accueil.tiles</welcome-file>
 	</welcome-file-list>
-
+	
 	<error-page>
 		<error-code>404</error-code>
 		<location>/pages/template/404.html</location>
 	</error-page>
 	
+	<!-- Configuration Spring -->
+	<listener>
+	   <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			classpath:/fr/meehome/mail/front/applicationContext.xml
+		</param-value>
+	</context-param>
+	
 	<!-- GESTION DES TEMPLATES AVEC APACHE - TILES -->
 	<listener>
-	    <listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
+	   <listener-class>org.apache.tiles.extras.complete.CompleteAutoloadTilesListener</listener-class>
 	</listener>
 	<servlet>
 	    <servlet-name>Tiles Dispatch Servlet</servlet-name>
@@ -27,8 +38,6 @@
 	    <servlet-name>Tiles Dispatch Servlet</servlet-name>
 	    <url-pattern>*.tiles</url-pattern>
 	</servlet-mapping>
-	
-	
 	
 	<servlet>
 	    <servlet-name>jersey-serlvet</servlet-name>

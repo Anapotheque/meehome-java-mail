@@ -2,7 +2,7 @@
 	<thead>
 		<tr>
 			<th>nom</th>
-			<th>Prénom</th>
+			<th>PrÃ©nom</th>
 			<th>mail</th>
 		</tr>
 	</thead>

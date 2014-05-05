@@ -1,10 +1,21 @@
-<nav class="navbar navbar-default" role="navigation">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="/meehome-java-mail-webapp/"><span class="glyphicon glyphicon-home"></span></a>
-	</div>
+<nav class="navbar navbar-static-top" role="navigation">
+		
+	<!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        	<span class="sr-only">Toggle navigation</span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+		</button>
+		<div class="navbar-header">
+			<a class="navbar-brand" href="/meehome-java-mail-webapp/"><span class="glyphicon glyphicon-home"></span></a>
+		</div>
+    </div>
+	
 	<ul class="nav navbar-nav">
         <li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions<b class="caret"></b></a>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
 			<ul class="dropdown-menu">
 	            <li><a href="/meehome-java-mail-webapp/pages/template/mail/mail.html">Envoyer un mail</a></li>
 	            <li><a href="/meehome-java-mail-webapp/pages/template/mail/historique.html">Historique des envois</a></li>
@@ -16,7 +27,7 @@
 			</ul>
 		</li>
 	</ul>
-	
+		
 	<form method="POST" action="" class="navbar-form form-inline">
 		<div style="text-align:right">
 			<div class="form-group">
