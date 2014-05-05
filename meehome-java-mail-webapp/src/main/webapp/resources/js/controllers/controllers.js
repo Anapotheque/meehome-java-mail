@@ -14,12 +14,12 @@ app.run(function ($rootScope, $templateCache) {
 app.controller('destinataireListeCtrl', ['$scope', 'destinatairesFactory', 'destinataireFactory', '$location',
 	function ($scope, destinatairesFactory, destinataireFactory, $location) {
 		
-	$scope.edit = function (userId) {
-		$location.path('/destinataire-edit/' + userId);
+	$scope.update = function (id) {
+		$location.path('/destinataire-update/' + id);
 	};
     
-	$scope.delete = function (userId) {
-		destinataireFactory.delete({ id: userId });
+	$scope.remove = function (id) {
+		destinataireFactory.delete({ id: id });
 		$scope.destinataires = destinatairesFactory.query();
 	};
         
@@ -30,7 +30,7 @@ app.controller('destinataireListeCtrl', ['$scope', 'destinatairesFactory', 'dest
 	$scope.destinataires = destinatairesFactory.query();
 }]);
 
-app.controller('destinataireDetailCtrl', ['$scope', '$routeParams', 'destinataireFactory', '$location',
+app.controller('destinataireUpdateCtrl', ['$scope', '$routeParams', 'destinataireFactory', '$location',
 	function ($scope, $routeParams, destinataireFactory, $location) {
 
 		$scope.update = function () {
