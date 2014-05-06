@@ -30,7 +30,49 @@
 		    	    </div>
 		    	</div>
 	            
-            	<!-- BREADCRUMBS DU SITE -->
+            	
+            	
+            	<!-- CAROUSEL -->
+            	<div class="row">	
+    	    		<div class="col-md-12">
+		            	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							  </ol>
+							
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    <div class="item active">
+							      <img src="/meehome-java-mail-webapp/resources/img/carousel/1.jpg" alt="ALT TEST">
+							      <div class="carousel-caption">
+							        TEST CONTENU
+							      </div>
+							    </div>
+							    
+							    <div class="item">
+							      <img src="/meehome-java-mail-webapp/resources/img/carousel/2.jpg" alt="ALT TEST">
+							      <div class="carousel-caption">
+							        TEST CONTENU
+							      </div>
+							    </div>
+							    
+							    <div class="item">
+							      <img src="/meehome-java-mail-webapp/resources/img/carousel/3.jpg" alt="ALT TEST">
+							      <div class="carousel-caption">
+							        TEST CONTENU
+							      </div>
+							    </div>
+							    
+							  </div>
+							
+							</div>
+					</div>
+				</div>
+				
+				<!-- BREADCRUMBS DU SITE -->
     	    	<div class="row">	
     	    		<div class="col-md-12">
     	    		  	<tiles:insertAttribute name="breadcrumbs" />
@@ -40,7 +82,7 @@
             	<div class="row">
 <%-- 			    	<tiles:insertAttribute name="content" /> --%>
 			    	
-			    	 <div class="container" ng-view=""></div>
+			    	 <div ng-view=""></div>
 			    	
 				</div>
 				

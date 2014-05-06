@@ -1,8 +1,9 @@
 <div class="col-md-12">
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<a style="float:right;cursor:pointer" ng-click="create()"><span class="glyphicon glyphicon-plus"></span></a>
-			<a href="#/accueil"><span class="glyphicon glyphicon-arrow-left"></span></a>
+			<a style="float:right" ng-click="create()" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
+			<a href="#/accueil" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-left"></span></a>
+			
 			<span>Liste destinataires</span>
 		</div>
 		<div class="panel-body">
