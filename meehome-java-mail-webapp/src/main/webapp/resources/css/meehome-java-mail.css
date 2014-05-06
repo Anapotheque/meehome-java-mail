@@ -1,3 +1,11 @@
+input.form-control {
+	padding : 4px 12px;
+	height: auto;
+}
+.btn {
+	padding : 4px 12px;
+}
+
 .error {
   padding: 10px;
   margin-bottom: 10px;
