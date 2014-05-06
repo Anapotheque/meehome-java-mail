@@ -26,9 +26,10 @@ aside {
 
 body {
   background-attachment: fixed;
-  background-image: url("/meehome-java-mail-webapp/resources/img/background-body-1.png");
+/*   background-image: url("/meehome-java-mail-webapp/resources/img/background-body-1.png"); */
 /*   background-image: url("/meehome-java-mail-webapp/resources/img/background-body-2.jpg"); */
-  background-repeat: no-repeat;
+	background-image : url('/meehome-java-mail-webapp/resources/img/noise.png');
+/*   background-repeat: no-repeat; */
   color: #555555;
 }
 
@@ -64,14 +65,18 @@ html, body {
 .page {
 	min-height: 100%;
 	position: relative;
+	margin-bottom: -200px; 
+	    	
 }
 
 footer {
- 	height: 100px;
+ 	height: 200px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
+	padding-top: 30px;
+	background: #121212 url('/meehome-java-mail-webapp/resources/img/header-background-home.jpg') no-repeat center top;
 }
 
 a.navbar-brand, .nav > li > a {
@@ -79,9 +84,19 @@ a.navbar-brand, .nav > li > a {
 	color: white;
 }
 
+section {
+/* 	background: #121212 url('/meehome-java-mail-webapp/resources/img/section-background.jpg') repeat; */
+/* 	background: #FFFFFF url('/meehome-java-mail-webapp/resources/img/noise.png') repeat; */
+	background-color: #D6D6D6;
+}
+
+.carousel {
+	height: 130px;
+}
+
 footer a {
-	text-shadow:none;
-	color: white;
+/* 	text-shadow:none; */
+/* 	color: white; */
 }
 footer a:hover {
 	color: white;
@@ -97,9 +112,10 @@ footer a:hover {
     background-color: transparent;
     border-radius: 4px;
     list-style: none outside none;
+    margin : 20px 0;
 }
 .breadcrumb > .active {
-	color : white;
+/* 	color : white; */
 }
 
 article {
@@ -113,4 +129,15 @@ article {
 .panel-default > .panel-heading {
 	background-image : none;
 	background-color : #f8f8f8; /* url('/meehome-java-mail-webapp/resources/img/noise.png') top left;*/
+}
+
+.panel-body {
+	background: url('/meehome-java-mail-webapp/resources/img/shadow-panel.png') no-repeat center bottom;
+	margin-bottom : -10px;
+}
+
+header {
+height: 230px;
+padding-top: 10px;
+background: #121212 url('/meehome-java-mail-webapp/resources/img/header-background-home.jpg') no-repeat center top;
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('meehome-java-mail-webapp', [
-	'meehome-java-mail-webapp.services', 
+	'meehome-java-mail-webapp.services',
 	'meehome-java-mail-webapp.controllers'
 	])
 	.config(function ($routeProvider, $httpProvider) {
@@ -23,4 +23,3 @@ angular.module('meehome-java-mail-webapp', [
 	    delete $httpProvider.defaults.headers.common['X-Requested-With'];
 	
 	});
-

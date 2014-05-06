@@ -11,17 +11,17 @@
         <put-attribute name="footer" value="/pages/template/footer.jsp" />
     </definition>
 	
-	<!-- ACCUEIL -->
-    <definition name="" extends="template">
-    	<put-attribute name="content-header" value="Accueil" />
-<!--         <put-attribute name="content" value="/pages/content/accueil/accueil.jsp" /> -->
-        <put-attribute name="breadcrumbs" value="/pages/content/accueil/breadcrumbs.jsp" />
+	<!-- DESTINATAIRES -->
+    <definition name="destinataires" extends="template">
+    	<put-attribute name="content-header" value="Destinataires" />
+        <put-attribute name="content" value="/pages/content/destinataire/destinataire.jsp" />
+        <put-attribute name="breadcrumbs" value="/pages/content/destinataire/breadcrumbs.jsp" />
     </definition>
 	
 	<!-- ACCUEIL -->
     <definition name="accueil" extends="template">
     	<put-attribute name="content-header" value="Accueil" />
-<!--         <put-attribute name="content" value="/pages/content/accueil/accueil.jsp" /> -->
+        <put-attribute name="content" value="/pages/content/accueil/accueil.jsp" />
         <put-attribute name="breadcrumbs" value="/pages/content/accueil/breadcrumbs.jsp" />
     </definition>
     
