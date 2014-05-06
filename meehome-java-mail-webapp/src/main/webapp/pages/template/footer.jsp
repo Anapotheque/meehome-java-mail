@@ -1,7 +1,8 @@
-<div class="container">    
-	<div style="text-align:right;font-size:80%;">
-		<a href="#" data-toggle="modal" data-target="#myModal">Besoin d'aide ?</a>
-	</div>
+<div class="container">
+	<h1>Conception - Egloo</h1>
+	<p>In Egloo we trust</p>
+	<a href="#" data-toggle="modal" data-target="#myModal">Pour nous contactez cliquez sur besoin d'aide</a>
+	<p style="text-align:center">© 2014, Egloo, Tous droits réservés</p>
 </div>
 
 <!-- POPUP : Informations complementaire -->

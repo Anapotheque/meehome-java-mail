@@ -19,58 +19,44 @@
         
     </head>
     <body ng-app="meehome-java-mail-webapp">
-    	<div class="page">
-	    	
-	    	<div class="container">  
-	    	
-	    		<!-- HEADER DU SITE -->
-	    	    <div class="row">	
-		    	    <div class="col-md-12">
-		    	    	<tiles:insertAttribute name="header" />
-		    	    </div>
-		    	</div>
-	            
-            	
-            	
-            	<!-- CAROUSEL -->
+    	
+    	<header>
+    		<div class="container">  
             	<div class="row">	
     	    		<div class="col-md-12">
-		            	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-							  <!-- Indicators -->
-							  <ol class="carousel-indicators">
-							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-							  </ol>
+    	    			
+    	    			<!-- HEADER DU SITE -->
+    	    			<tiles:insertAttribute name="header" />
+    	    			
+    	    			<!-- CAROUSEL -->
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
 							
-							  <!-- Wrapper for slides -->
-							  <div class="carousel-inner">
-							    <div class="item active">
-							      <img src="/meehome-java-mail-webapp/resources/img/carousel/1.jpg" alt="ALT TEST">
-							      <div class="carousel-caption">
-							        TEST CONTENU
-							      </div>
-							    </div>
+							<div class="carousel-inner">
+								<div class="item active">
+							     	<h1>Gestion des e-mails</h1>
+							     	<p>Vous pouvez gerer vos mail depuis cette inteface</p>
+								</div>
 							    
-							    <div class="item">
-							      <img src="/meehome-java-mail-webapp/resources/img/carousel/2.jpg" alt="ALT TEST">
-							      <div class="carousel-caption">
-							        TEST CONTENU
-							      </div>
-							    </div>
+								<div class="item">
+							  	  	<h1>Gestion des destinataires</h1>
+								    <p>Vous pouvez gerer votre liste de diffusion depuis cette interface</p>
+								</div>
 							    
-							    <div class="item">
-							      <img src="/meehome-java-mail-webapp/resources/img/carousel/3.jpg" alt="ALT TEST">
-							      <div class="carousel-caption">
-							        TEST CONTENU
-							      </div>
-							    </div>
+								<div class="item">
+								  	<h1>Gestion des e-mails</h1>
+								   	<p>Vous pouvez gerer vos mail depuis cette inteface</p>
+								</div>
 							    
-							  </div>
-							
 							</div>
+						</div>
 					</div>
 				</div>
+			</div>
+		</header>
+			
+		<section class="page">
+    	
+			<div class="container">
 				
 				<!-- BREADCRUMBS DU SITE -->
     	    	<div class="row">	
@@ -81,22 +67,22 @@
             	
             	<div class="row">
 <%-- 			    	<tiles:insertAttribute name="content" /> --%>
-			    	
 			    	 <div ng-view=""></div>
-			    	
 				</div>
 				
 			</div>
-	    	
+	   
 	    	<!-- FOOTER DU SITE -->
-<!-- 	    	<footer> -->
-<!-- 	    		<div class="row"> -->
-<!-- 	    			<div class="col-md-12"> -->
-<!-- 	    				<tiles:insertAttribute name="footer" /> -->
-<!-- 	    			</div> -->
-<!-- 	    		</div> -->
-<!-- 	    	</footer> -->
-        </div>
+	    	<footer>
+	    		<div class="row">
+	    			<div class="col-md-12">
+	    				<tiles:insertAttribute name="footer" />
+	    			</div>
+	    		</div>
+	    	</footer>
+	    	
+    	 </section>
+	    	
         
         <!-- JAVASCRIPT -->
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

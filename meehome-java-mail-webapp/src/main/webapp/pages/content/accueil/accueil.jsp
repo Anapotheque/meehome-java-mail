@@ -7,7 +7,7 @@
 				Vous pouvez ajouter, modifier, supprimer ou ajouter en masse des destinataires.
 			</p>
 			<p>
-				<a class="btn btn-default" href="#/destinataire-liste" role="button">Afficher la liste »</a>
+				<a class="btn btn-default" href="/meehome-java-mail-webapp/destinataires.tiles" role="button">Afficher la liste »</a>
 			</p>
 		</div>
 	</div>

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-static-top" role="navigation">
-		
+	
 	<!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -26,16 +26,19 @@
 	            <li><a href="/meehome-java-mail-webapp/pages/template/parametrage.html">Paramètre de la boite mail</a></li>
 			</ul>
 		</li>
+		<li><a href="#/connexion">Se connecter</a></li>
 	</ul>
 		
-	<form method="POST" action="" class="navbar-form form-inline">
-		<div style="text-align:right">
-			<div class="form-group">
-				<input type="text" placeholder="email" class="form-control" />
-			</div><div class="form-group" style="margin-left : 5px;">
-				<input type="password" placeholder="password" class="form-control" />
-			</div>
-			<button class="btn btn-default" type="submit">Connexion</button>
-		</div>
-	</form>
+
+<!-- 		<div style="text-align:right" class="navbar-brand"> -->
+<!-- 	<form method="POST" action="" class="navbar-form form-inline"> -->
+<!-- 			<div class="form-group"> -->
+<!-- 				<input type="text" placeholder="email" class="form-control" /> -->
+<!-- 			</div><div class="form-group" style="margin-left : 5px;"> -->
+<!-- 				<input type="password" placeholder="password" class="form-control" /> -->
+<!-- 			</div> -->
+<!-- 			<button class="btn btn-default" type="submit">Connexion</button> -->
+<!-- 	</form> -->
+			
+<!-- 		</div> -->
 </nav>
