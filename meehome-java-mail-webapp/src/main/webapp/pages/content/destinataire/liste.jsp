@@ -1,21 +1,21 @@
 <div class="col-md-12">
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<a style="float:right" ng-click="create()" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-plus"></span></a>
-			<a href="#/accueil" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-arrow-left"></span></a>
-			
-			<span>Liste destinataires</span>
+			<b>Liste destinataires</b>
 		</div>
 		<div class="panel-body">
 			
 			<table class="table table-striped table-condensed ">
 				<thead>
 					<tr>
-						<th>#</th>
+						<th>
+							<a class="pointer" ng-click="create()"><span class="glyphicon glyphicon-plus"></span></a> 
+							<a class="pointer" ng-click="import()"><span class="glyphicon glyphicon-paperclip"></span></a>
+						</th>
 						<th>Prénom</th>
 						<th>Nom</th>
 						<th>Email</th>
-						<th style="text-align: center;">Actions</th>
+						<th style="text-align: center;">Actions</span></th>
 					</tr>
 				</thead>
 				<tbody>

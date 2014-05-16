@@ -1,22 +1,26 @@
-<ol class="breadcrumb">
-	<li><a href="/meehome-java-mail-webapp/">Accueil</a></li>
-	<li class="active">Gestion de la mailing liste</li>
-</ol>
-
-<ul class="nav nav-tabs">
-	<li><a href="#" onclick="content('diffusion/liste')">Listes des inscrits à  la mailing liste</a></li>
-	<li class="active"><a href="#">Importer un fichier</a></li>
-</ul>
-<br/>
-<p>Attention, tout import ecrasera les données deja presentes.</p>
-
-<form method="POST" role="form">
-	
-	<!-- DESTINATAIRES -->
-	<div class="form-group">
-		<input  id="detinataires" type="file">
-		<p class="help-block">fichier des destinataires à  joindre</p>
+<div class="col-md-12">
+	<div class="panel panel-default">
+		<div class="panel-heading"><b>Import des destinataires</b></div>
+		<div class="panel-body">
+  
+			<form novalidate="novalidate" class="form-horizontal" role="form">
+			
+				<div class="form-group">
+		      		<label class="col-md-2 control-label" for="inputNom"></label>
+					<div class="col-sm-5">
+						<input  id="detinataires" type="file">
+						<p class="help-block">fichier des destinataires à  joindre</p>
+					</div>
+				</div>
+		    	
+				<div class="form-group">
+					<div class="col-md-offset-2 col-md-5">
+						<a ng-click="cancel()" class="btn btn-small btn-default">Annuler</a>
+						<a ng-click="create()" class="btn btn-small btn-primary">Importer les destinataires</a>
+					</div>
+				</div>
+				
+			</form>
+		</div>
 	</div>
-	
-	<button type="submit" class="btn btn-default">Importer destinataires</button>
-</form>
+</div>
