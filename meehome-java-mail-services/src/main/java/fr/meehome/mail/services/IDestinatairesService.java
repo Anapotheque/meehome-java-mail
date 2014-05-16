@@ -3,18 +3,20 @@ package fr.meehome.mail.services;
 import java.io.File;
 import java.util.List;
 
-import fr.meehome.mail.services.domain.Destinataires;
+import fr.meehome.mail.services.domain.Destinataire;
 
 public interface IDestinatairesService {
 
-    public List<Destinataires> getListeDestinataires();
+    public List<Destinataire> findAll();
 
-    public Destinataires getDestinataires(String id);
+    public Destinataire find(Destinataire destinataire);
 
-    public void setListeDestinataires(List<Destinataires> listDestinataires);
+    public Destinataire add(Destinataire destinataire);
 
-    public void setDestinataires(Destinataires destinataires);
+    public Destinataire update(Destinataire destinataire);
 
-    public List<Destinataires> importDestinataire(File file);
+    public Destinataire addAll(File file);
+
+    public void delete(Destinataire destinataire);
 
 }

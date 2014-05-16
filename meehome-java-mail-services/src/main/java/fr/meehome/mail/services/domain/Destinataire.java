@@ -1,6 +1,6 @@
 package fr.meehome.mail.services.domain;
 
-public class Destinataires {
+public class Destinataire {
 
     private String id;
 

@@ -4,49 +4,67 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import fr.meehome.mail.services.IDestinatairesService;
-import fr.meehome.mail.services.domain.Destinataires;
+import org.dozer.Mapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import fr.meehome.mail.dao.IDestinataireDao;
+import fr.meehome.mail.services.IDestinatairesService;
+import fr.meehome.mail.services.domain.Destinataire;
+
+@Service
+@Transactional
 public class DestinatairesService implements IDestinatairesService {
 
-    @Override
-    public List<Destinataires> getListeDestinataires() {
-        // TODO - APPEL DAO
-        ArrayList<Destinataires> listeDestinataires = new ArrayList<Destinataires>();
-        Destinataires destinataires = new Destinataires();
-        destinataires.setId("");
-        destinataires.setMail("mail@mail.com");
-        destinataires.setNom("nom");
-        destinataires.setPrenom("prenom");
-        listeDestinataires.add(destinataires);
-        return listeDestinataires;
+    @Autowired
+    private IDestinataireDao destinataireDao;
+
+    @Autowired
+    @Qualifier("dozerBeanMapper")
+    private Mapper mapper;
+
+    private List<Destinataire> populateUserDto(List<fr.meehome.mail.dao.domain.Destinataire> listDestinataire) {
+        List<Destinataire> list = new ArrayList<Destinataire>();
+        for (fr.meehome.mail.dao.domain.Destinataire destinataire : listDestinataire) {
+            list.add(mapper.map(destinataire, Destinataire.class));
+        }
+        return list;
     }
 
     @Override
-    public Destinataires getDestinataires(String id) {
-        // TODO - APPEL DAO
+    public List<Destinataire> findAll() {
+        return populateUserDto(destinataireDao.findAll());
+    }
+
+    @Override
+    public Destinataire find(Destinataire destinataire) {
+        return populateUserDto(destinataireDao.search(arg0)(destinataire));
+    }
+
+    @Override
+    public Destinataire add(Destinataire destinataire) {
+        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
-    public void setListeDestinataires(List<Destinataires> listDestinataires) {
-        // TODO - APPEL DAO
+    public Destinataire update(Destinataire destinataire) {
+        // TODO Auto-generated method stub
+        return null;
     }
 
     @Override
-    public void setDestinataires(Destinataires destinataires) {
-        // TODO - APPEL DAO
+    public Destinataire addAll(File file) {
+        // TODO Auto-generated method stub
+        return null;
     }
 
     @Override
-    public List<Destinataires> importDestinataire(File file) {
-        ArrayList<Destinataires> listeDestinataires = new ArrayList<Destinataires>();
-        Destinataires destinataires = new Destinataires();
-        destinataires.setId("");
-        destinataires.setMail("mail@mail.com");
-        destinataires.setNom("nom");
-        destinataires.setPrenom("prenom");
-        listeDestinataires.add(destinataires);
-        return listeDestinataires;
+    public void delete(Destinataire destinataire) {
+        // TODO Auto-generated method stub
+
     }
+
 }
