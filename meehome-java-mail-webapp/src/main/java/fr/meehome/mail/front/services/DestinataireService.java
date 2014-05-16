@@ -56,7 +56,7 @@ public class DestinataireService implements IDestinataireService {
     @Override
     public Destinataire create(Destinataire destinataire) {
         list.add(destinataire);
-        System.out.println("MISE A JOUR DESTINATAIRE : " + destinataire.getNom() + " - " + destinataire.getPrenom());
+        System.out.println("CREATION DESTINATAIRE : " + destinataire.getNom() + " - " + destinataire.getPrenom());
         return null;
     }
 
@@ -68,7 +68,8 @@ public class DestinataireService implements IDestinataireService {
 
     @Override
     public void remove(int id) {
-        System.out.println("CREATION DESTINATAIRE");
+        Destinataire destinataire = find(id);
+        System.out.println("DESTRUCTION DESTINATAIRE" + destinataire.getNom() + " - " + destinataire.getPrenom());
     }
 
 }
