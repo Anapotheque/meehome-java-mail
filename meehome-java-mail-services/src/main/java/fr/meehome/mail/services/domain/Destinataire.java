@@ -2,7 +2,7 @@ package fr.meehome.mail.services.domain;
 
 public class Destinataire {
 
-    private String id;
+    private int id;
 
     private String mail;
 
@@ -10,11 +10,11 @@ public class Destinataire {
 
     private String prenom;
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
