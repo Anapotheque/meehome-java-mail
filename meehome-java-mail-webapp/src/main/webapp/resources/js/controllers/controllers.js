@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('meehome-java-mail-webapp.controllers', []);
+var app = angular.module('meehome-java-mail-webapp-destinataires.controllers', []);
 
 // Clear browser cache (in development mode)
 //
@@ -25,6 +25,10 @@ app.controller('destinataireListeCtrl', ['$scope', 'destinatairesFactory', 'dest
         
 	$scope.create = function () {
 		$location.path('/destinataire-create');
+	};
+	
+	$scope.import = function () {
+		$location.path('/destinataire-import');
 	};
 
 	$scope.destinataires = destinatairesFactory.query();
@@ -54,6 +58,19 @@ app.controller('destinataireUpdateCtrl', ['$scope', '$routeParams', 'destinatair
 	 	
 		$scope.create = function () {
 			destinatairesFactory.create($scope.destinataire);
+	 		$location.path('/destinataire-liste');
+	 	}
+	}]);
+
+ app.controller('destinataireImportCtrl', ['$scope', 'destinatairesFactory', '$location',
+	function ($scope, destinatairesFactory, $location) {
+	 	
+	 	$scope.cancel = function () {
+			$location.path('/destinataire-liste');
+		};
+	 	
+		$scope.import = function () {
+			destinatairesFactory.import($scope.destinataire);
 	 		$location.path('/destinataire-liste');
 	 	}
 	}]);
