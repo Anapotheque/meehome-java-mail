@@ -9,7 +9,7 @@
         	<span class="icon-bar"></span>
 		</button>
 		<div class="navbar-header">
-			<a class="navbar-brand" href="#/accueil"><span class="glyphicon glyphicon-home"></span></a>
+			<a class="navbar-brand" href="/meehome-java-mail-webapp/accueil.tiles"><span class="glyphicon glyphicon-home"></span></a>
 		</div>
     </div>
 	
@@ -20,7 +20,7 @@
 	            <li><a href="/meehome-java-mail-webapp/pages/template/mail/mail.html">Envoyer un mail</a></li>
 	            <li><a href="/meehome-java-mail-webapp/pages/template/mail/historique.html">Historique des envois</a></li>
 	            <li class="divider"></li>
-	            <li><a href="#/destinataire-liste">Gerer la liste de diffusion</a></li>
+	            <li><a href="/meehome-java-mail-webapp/destinataires.tiles">Gerer la liste de diffusion</a></li>
 	            <li><a href="#/destinataire-import">Importer une liste de destinataire</a></li>
 	            <li class="divider"></li>
 	            <li><a href="/meehome-java-mail-webapp/pages/template/parametrage.html">Paramètre de la boite mail</a></li>

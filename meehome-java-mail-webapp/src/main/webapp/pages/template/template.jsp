@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" >
         
     </head>
-    <body ng-app="meehome-java-mail-webapp">
+    <body>
     	
     	<header>
     		<div class="container">  
@@ -66,8 +66,8 @@
     	    	</div>
             	
             	<div class="row">
-<%-- 			    	<tiles:insertAttribute name="content" /> --%>
-			    	 <div ng-view=""></div>
+			    	<tiles:insertAttribute name="content" />
+<!-- 			    	 <div ng-view=""></div> -->
 				</div>
 				
 			</div>
@@ -88,10 +88,14 @@
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
         
+<!--         <script src="angular-file-upload-shim.min.js"></script>  -->
+        
         <script src="/meehome-java-mail-webapp/resources/angularJS/angular.min.js"></script>
         <script src="/meehome-java-mail-webapp/resources/angularJS/angular-resource.min.js"></script>
         <script src="/meehome-java-mail-webapp/resources/angularJS/angular-cookies.min.js"></script>
      	<script src="/meehome-java-mail-webapp/resources/angularJS/angular-sanitize.min.js"></script>
+     	
+<!--      	<script src="angular-file-upload.min.js"></script> -->
         
         <script src="/meehome-java-mail-webapp/resources/js/app.js"></script>
         <script src="/meehome-java-mail-webapp/resources/js/controllers/controllers.js"></script>
