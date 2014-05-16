@@ -11,12 +11,12 @@ public interface IDestinatairesService {
 
     public Destinataire find(Destinataire destinataire);
 
-    public Destinataire add(Destinataire destinataire);
+    public boolean add(Destinataire destinataire);
 
-    public Destinataire update(Destinataire destinataire);
+    public boolean update(Destinataire destinataire);
 
-    public Destinataire addAll(File file);
+    public boolean addAll(File file);
 
-    public void delete(Destinataire destinataire);
+    public boolean delete(Destinataire destinataire);
 
 }
