@@ -4,6 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.dumbster.smtp.SimpleSmtpServer;
@@ -11,6 +12,7 @@ import com.dumbster.smtp.SmtpMessage;
 
 import fr.meehome.mail.services.domain.Mail;
 
+@Ignore
 public class MailServiceTest {
 
     private final static String LIST_DESTINATAIRES = "raballand.romain@gmail.com";
