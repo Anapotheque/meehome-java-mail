@@ -15,18 +15,12 @@ public class Destinataire {
     @Column(name = "ID")
     private int id;
 
-    @Id
-    @GeneratedValue
     @Column(name = "MAIL")
     private String mail;
 
-    @Id
-    @GeneratedValue
     @Column(name = "NOM")
     private String nom;
 
-    @Id
-    @GeneratedValue
     @Column(name = "PRENOM")
     private String prenom;
 

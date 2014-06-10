@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dataset>
-    <DESTINATAIRE mail="email1" nom="nom1" prenom="prenom1" />
-    <DESTINATAIRE mail="email2" nom="nom2" prenom="prenom2" />
+    <DESTINATAIRE MAIL="email1" NOM="nom1" PRENOM="prenom1" />
+    <DESTINATAIRE MAIL="email2" NOM="nom2" PRENOM="prenom2" />
 </dataset>

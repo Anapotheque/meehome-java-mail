@@ -37,23 +37,22 @@ public class DestinataireDaoTest extends AbstractTransactionalJUnit4SpringContex
     @Test
     public void should_return_one() {
         List<Destinataire> listDestinataire = destinataireDao.findAll();
-        Destinataire destinataire = destinataireDao.get(listDestinataire.get(0).getId());
-        assertEquals("NOM1", destinataire.getNom());
+        assertEquals("nom1", destinataireDao.get(listDestinataire.get(0).getId()).getNom());
     }
 
     @Test
     public void should_return_create_one() {
         Destinataire destinataire = new Destinataire();
-        destinataire.setNom("NOM3");
-        destinataire.setPrenom("PRENOM3");
-        destinataire.setMail("MAIL3");
+        destinataire.setNom("nom3");
+        destinataire.setPrenom("prenom3");
+        destinataire.setMail("mail3");
         assertEquals(true, destinataireDao.save(destinataire));
     }
 
     @Test
     public void should_return_delete_one() {
         List<Destinataire> listDestinataire = destinataireDao.findAll();
-        Destinataire destinataire = destinataireDao.get(listDestinataire.get(2).getId());
+        Destinataire destinataire = destinataireDao.get(listDestinataire.get(0).getId());
         assertEquals(true, destinataireDao.remove(destinataire));
     }
 

@@ -27,9 +27,15 @@
 		</dependency>
 		
 		<dependency>
-		  <groupId>org.hibernate</groupId>
-		  <artifactId>hibernate-commons-annotations</artifactId>
-		  <version>3.3.0.ga</version>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>3.3.0.ga</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hibernate</groupId>
+					<artifactId>hibernate</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		
 		<dependency>
