@@ -1,0 +1,1 @@
+Permet l'envoie de mail en masse depuis une interface graphique
